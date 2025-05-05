@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #bd5151;
+    color: white;
+    font-family: 'Khand', Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.header {
+    background-color: rgb(255, 28, 0);
+    color: white;
+    overflow: visible;
+    width: 100%;
+    padding: 2vh 4vw;
+    display: flex;
+    min-height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    height: 9vh;
+    max-height: 10vh;
+    width: auto;
+    max-width: 15vw;
+    margin-left: -5%;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+    flex-grow: 2;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.9vw, 4rem);
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: block;
+    text-align: left;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    flex-direction: row;
+    gap: 3vw;
+    width: 100%;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
+.text-overlay {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+    z-index: 2;
+}
+    
+    
+.text-overlay h1 {
+    font-size: 3vw;
+    margin-bottom: 3vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    margin-left: -6%; 
+    position: relative;
+    left: -3%;
+    width: fit-content;
+}
+
+.text-overlay p {
+    font-size: 150%;
+    margin-top: 5%;
+    color: white;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(66, 66, 117, 0.999);
+    text-align: left; 
+    margin-left: -10%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.vehicle {
+    float: left;
+}
+
+#temporada_2021 h1 {
+    padding-top: 4%;
+    text-align: center;
+    text-decoration: dotted;
+    font-size: 100%;
+    text-decoration: solid 3px black;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+    color: silver;
+}
+
+#temporada_2021 {
+    width: 100%;
+    margin: 0px auto;
+    clear: left;
+        
+}
+
+.cuadro{
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    background-color: white;
+    margin: 30px 15px;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 150%;
+    float: left;
+  
+}
+
+
+.cuadro2{
+    width: 30%;
+    height: -199%;
+    padding: 20px;
+    background-color: white;
+    margin: 30px 15px;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 150%;
+    float: left;
+    margin-top: -20%;
+    
+  
+}
+
+.cuadro h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#mercedes p {
+    color: rgb(35, 192, 179);
+    text-align: center;
+    font-weight: bold;
+}
+
+#ferrari p {
+    color: rgb(240, 88, 88);
+    text-align: center;
+    font-weight: bold;
+}
+
+#red_bull p{
+    color: rgb(5, 3, 109);
+    text-align: center;
+    font-weight: bold;
+}
+
+#mclaren p {
+    color: rgb(236, 93, 36);
+    text-align: center;
+    font-weight: bold;
+}
+
+#alpine p {
+    color: rgb(8, 116, 240);
+    text-align: center;
+    font-weight: bold;
+}
+
+#aston_martin p {
+    color: rgb(28, 99, 93);
+    text-align: center;
+    font-weight: bold;
+}
+
+#alphatauri p {
+    color: rgb(67, 177, 228);
+    text-align: center;
+    font-weight: bold;
+}
+
+#alfa_romeo p {
+    color: rgb(134, 21, 21);
+    text-align: center;
+    font-weight: bold;
+}
+
+#haas p {
+    color: rgb(35, 54, 158);
+    text-align: center;
+    font-weight: bold;
+}
+
+#williams p {
+    color: rgb(29, 151, 233);
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-container {
+    background-color: rgb(20, 20, 32);
+    color: white;
+    width: 100%;
+    min-height: 20vh; 
+    padding: 2vh 5vw;
+    position: absolute;
+    bottom: -150%;
+    left: 0;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    z-index: 1000;
+    gap: 3vw; 
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    height: 0.5%;
+    background: rgb(85, 82, 82);
+}
+    
+.logo-section {
+    width: 20%;
+    min-width: 100px;
+    margin-right: 1vw;
+}
+    
+.footer-logo {
+    width: 100%;
+    height: 10vh;
+    max-height: 20vh;
+    object-fit: contain;
+    position: relative;
+    left: -10vw;        
+    top: 5.4vh;     
+}
+    
+.footer-content {
+   display: flex;
+   flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 20%;
+    white-space: nowrap;
+    position: relative; 
+    top: -6vh; 
+    left: -10vw;   
+    margin-left: -5vw;
+}
+
+.contact-info {
+    display: flex;
+    gap: 40%; 
+    margin-top: 2%;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+   margin-top: 2%;
+}
+
+.social-links a {
+    color: inherit; 
+   text-decoration: none;
+}
+    
+
+.social-links a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+}
+
+.copyright {
+    position: absolute;
+    bottom: -200%;      
+    right: -20%;       
+    color: #808080;
+    font-size: 0.9rem;
+    margin: 0;        
+    transform: none;  
+}
+
+nav ul {
+    display: flex;
+    gap: 3vw; 
+    margin-left: 0vw;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav a {
+    color: #ddd;
+    display: block;
+    text-decoration: none;
+}
+
+nav>ul {
+    background-color: rgb(255, 28, 0);
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1vh 2vw;
+    }
+    
+    .logo {
+        height: 6vh;
+        margin: 0 1%;
+    }
+    
+    .nav ul {
+        gap: 1vw;
+    }
+    
+    .nav-link {
+        font-size: clamp(0.7rem, 1.8vw, 1.2rem);
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row; /* Mantenemos en fila */
+        align-items: center;
+        padding: 1vh 1vw;
+    }
+    
+    .nav {
+        justify-content: flex-end;
+    }
+    
+    .nav ul {
+        gap: 0.8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 5vh;
+    }
+    
+    .nav-link {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.3rem;
+    }
+}

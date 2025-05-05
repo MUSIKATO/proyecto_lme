@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Fórmula 1</title>
+    <link rel="stylesheet" href="Css/contactos.css">
+</head>
+<body class="body_contacto">
+ 
+    <header class="header">
+        <img src="Img/f1Logo.png" alt="f1logo" class="logo">
+        <nav class="nav">
+          <ul>
+            <li><a href="inicio.html" class="nav-link">INICIO</a></li>
+            <li><a href="equipos.html" class="nav-link">EQUIPOS</a></li>           
+            <li><a href="pilotos.html" class="nav-link">PILOTOS</a></li>
+            <li><a href="GP 2021.html" class="nav-link">CARRERAS</a></li>
+            <li><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+            <li><a href="contactosf1.html" class="nav-link active">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header> 
+
+
+
+    <main class="contacto-container">
+        <h1>CONTACTO</h1>
+        <p class="subtitle">¿Tienes preguntas? Escríbenos y te responderemos a la velocidad de un  carro de F1 ;)</p>
+        
+        <form class="contacto-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" 
+                       pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" 
+                       title="Solo se permiten letras" 
+                       required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un tema...</option>
+                    <option value="tickets">Compra de tickets</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="prensa">Prensa y medios</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Tu mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+        </form>
+        
+        <div class="contacto-info">
+            <h3>Otras formas de contacto:</h3>
+            <p><strong>Teléfono:</strong> +44 20 1234 5678</p>
+            <p><strong>Correo:</strong>ticketscore@formula1.com</p>
+            <p><strong>Dirección:</strong> Circuito de Silverstone, Reino Unido</p>
+        </div>
+    </main>
+
+    <section class="creadores-section">
+        <h2>Página creada por:</h2>
+        <div class="creadores-grid">
+         
+            <div class="creador-card">
+                <img src="Img/Contactos/Captura de pantalla 2025-04-07 191947.png" alt="yo">
+                <h3>Vladimir Josue Aguila Mendez </h3>
+                <p>Carnet: AM240357</p>
+                <p>Técnico en Ciencias de la Computación</p>
+                <p>Universidad: DON BOSCO</p>
+            </div>
+            
+       
+            <div class="creador-card">
+                <img src="Img/Contactos/gerardo_turcios_photo.jpeg" alt="Nombre Apellido">
+                <h3>Gerardo Emilio Turcios Siliézar</h3>
+                <p>Carnet: TS200364</p>
+                <p>Técnico en Ciencias de la Computación</p>
+                <p>Universidad: DON BOSCO</p>
+            </div>
+            
+    
+            <div class="creador-card">
+                <img src="Img\Contactos\Reyes.jpg" alt="Nombre Apellido">
+                <h3>Diego Alejandro Reyes Pacas</h3>
+                <p>Carnet: RP240229</p>
+                <p>Técnico en Ciencias de la Computación</p>
+                <p>Universidad: DON BOSCO</p>
+            </div>
+            
+         
+            <div class="creador-card">
+                <img src="Img/Contactos/drake bell.jpg" alt="drake bell">
+                <h3>Danilo Ernesto Velado Mena </h3>
+                <p>Carnet: VM251328</p>
+                <p>Técnico en Ciencias de la Computación</p>
+                <p>Universidad: DON BOSCO</p>
+            </div>
+            
+      
+            <div class="creador-card">
+                <img src="Img/Contactos/cami.jpg" alt="Nombre Apellido">
+                <h3>Camila Alejandra Beltrán Medrano</h3>
+                <p>Carnet: BM241462</p>
+                <p>Técnico en Ciencias de la Computación</p>
+                <p>Universidad: DON BOSCO</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-container">
+        <div class="logo-section">
+            <img src="Img/logo pie.png" alt="Formula 1" class="footer-logo">
+        </div>
+        
+        <div class="footer-content">
+            <div class="social-links">
+                <span>Síguenos en: </span>
+                <a href="https://www.instagram.com/f1/" target="_blank" rel="insta">Instagram |</a>
+                <a href="https://twitter.com/F1" target="_blank" rel="twita">Twitter |</a>
+                <a href="https://www.youtube.com/F1" target="_blank" rel="yutu">YouTube</a>
+            </div>
+            
+            <div class="contact-info">
+                <span>Correo: ticketscore@formula1.com</span>
+                <span>Teléfono: +44 20 1234 5678</span>
+            </div>
+            
+            <div class="copyright">
+                © 2025 F1 Temporada 2021 - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
